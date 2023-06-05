@@ -1,4 +1,4 @@
-module awesomeProject
+module github.com/anCreny/webis
 
 go 1.18
 
