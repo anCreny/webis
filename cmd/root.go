@@ -4,7 +4,7 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"awesomeProject/Printers"
+	"github.com/anCreny/webis/Printers"
 	"github.com/spf13/cobra"
 	"gopkg.in/src-d/go-git.v4"
 	"os"
