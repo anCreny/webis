@@ -92,13 +92,13 @@ var newCmd = &cobra.Command{
 				return
 			}
 		default:
-			if _, err := exec.Command("go mod init " + projectName).Output(); err != nil {
+			if _, err := exec.Command("go", "mod", "init", projectName).Output(); err != nil {
 				Printers.ShowError(err)
 				return
 			} else {
 				Printers.ShowLog("Go module initiated")
 			}
-			if _, err := exec.Command("go get github.com/anCreny/WebIsland@latest").Output(); err != nil {
+			if _, err := exec.Command("go", "get", "github.com/anCreny/WebIsland@latest").Output(); err != nil {
 				Printers.ShowError(err)
 				return
 			} else {
